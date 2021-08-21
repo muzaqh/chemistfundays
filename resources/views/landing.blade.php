@@ -105,7 +105,7 @@
                         </a>
                     </li>
                     <li class="nav-main-item">
-                        <a class="nav-main-link" href="javascript:void(0)">
+                        <a class="nav-main-link" href="/loginpage">
                             <span class="nav-main-link-name">Masuk</span>
                         </a>
                     </li>
@@ -193,16 +193,11 @@
         <div class="content content-full">
             <div class="py-5 push">
                 <h2 class="mb-2 text-center">
-                    Title #2
+                    1. Pilih tombol daftar
                 </h2>
                 <h3 class="font-w300 text-muted mb-0 text-center">
-                    Subtitle
+                    Buat akun anda dengan mendaftarkan email & password
                 </h3>
-            </div>
-            <div class="text-center">
-                <p>
-                    Your content..
-                </p>
             </div>
         </div>
     </div>
@@ -213,16 +208,11 @@
         <div class="content content-full">
             <div class="py-5 push">
                 <h2 class="mb-2 text-center">
-                    Title #3
+                    2. Masuk
                 </h2>
                 <h3 class="font-w300 text-muted mb-0 text-center">
-                    Subtitle
+                    Silahkan masuk dengan akun yang telah anda buat
                 </h3>
-            </div>
-            <div class="text-center">
-                <p>
-                    Your content..
-                </p>
             </div>
         </div>
     </div>
@@ -233,20 +223,30 @@
         <div class="content content-full">
             <div class="py-5 push">
                 <h2 class="mb-2 text-center">
-                    Title #4
+                    3. Registrasi
                 </h2>
                 <h3 class="font-w300 text-muted mb-0 text-center">
-                    Subtitle
+                    Isi dengan data lengkap sesuai dengan persyaratan yang ada
                 </h3>
-            </div>
-            <div class="text-center">
-                <p>
-                    Your content..
-                </p>
             </div>
         </div>
     </div>
     <!-- END Section #4 -->
+
+    <!-- Section #5 -->
+    <div class="bg-white">
+        <div class="content content-full">
+            <div class="py-5 push">
+                <h2 class="mb-2 text-center">
+                    4. Pengumuman atau Informasi
+                </h2>
+                <h3 class="font-w300 text-muted mb-0 text-center">
+                    Anda dapat melihat update informasi mengenai Chemist Fun Days XIII pada menu informasi
+                </h3>
+            </div>
+        </div>
+    </div>
+    <!-- END Section #5 -->
 </main>
 <!-- END Main Container -->
 
