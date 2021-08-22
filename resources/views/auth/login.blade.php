@@ -28,10 +28,10 @@
                             <div class="block-content block-content-full px-lg-5 py-md-5 py-lg-6">
                                 <!-- Header -->
                                 <div class="mb-2 text-center">
-                                    <a class="link-fx font-w700 font-size-h1" href="index.html">
-                                        <span class="text-dark">Dash</span><span class="text-primary">mix</span>
+                                    <a class="link-fx font-w700 font-size-h3" href="/">
+                                        <span class="text-dark">Chemist</span><span class="text-primary">Fun Days</span>
                                     </a>
-                                    <p class="text-uppercase font-w700 font-size-sm text-muted">Sign In</p>
+                                    <p class="text-uppercase font-w700 font-size-sm text-muted">Masuk</p>
                                 </div>
                                 <!-- END Header -->
 
@@ -47,19 +47,21 @@
                                     <div class="form-group d-sm-flex justify-content-sm-between align-items-sm-center text-center text-sm-left">
                                         <div class="custom-control custom-checkbox custom-control-primary">
                                             <input type="checkbox" class="custom-control-input" id="login-remember-me" name="remember-me" checked="">
-                                            <label class="custom-control-label" for="login-remember-me">Remember Me</label>
+                                            <label class="custom-control-label" for="login-remember-me">Ingat saya</label>
                                         </div>
                                         <div class="font-w600 font-size-sm py-1">
-                                            <a href="javascript:void(0)">Forgot Password?</a>
+                                            <a href="javascript:void(0)">Lupa password?</a>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <button type="submit" class="btn btn-block btn-hero-primary">
-                                            <i class="fa fa-fw fa-sign-in-alt mr-1"></i> Sign In
+                                            <a href="/dashboard">
+                                            </a>
+                                            <i class="fa fa-fw fa-sign-in-alt mr-1"></i> Masuk
                                         </button>
                                     </div>
                                     <div class="form-group text-center">
-                                        <a class="font-w600 font-size-sm" href="{{ route('register') }}" >Create New Account</a>
+                                        <a class="font-w600 font-size-sm" href="{{ route('register') }}" >Daftar</a>
                                     </div>
                                 </form>
                                 <!-- END Sign In Form -->
@@ -68,14 +70,10 @@
                         <div class="col-md-6 order-md-0 bg-primary-dark-op d-flex align-items-center">
                             <div class="block-content block-content-full px-lg-5 py-md-5 py-lg-6">
                                 <div class="media">
-                                    <a class="img-link mr-3" href="javascript:void(0)">
-                                        <img class="img-avatar img-avatar-thumb" src="{{ asset('media/avatars/avatar7.jpg') }}" alt="">
-                                    </a>
                                     <div class="media-body">
                                         <p class="text-white font-w600 mb-1">
-                                            My Fucking Fisrt Web Development!
+                                            Silahkan masuk dengan akun yang telah dibuat!
                                         </p>
-                                        <a class="text-white-75 font-w600" href="https://instagram.com/manusiainstan_">muzaqh</a>
                                     </div>
                                 </div>
                             </div>

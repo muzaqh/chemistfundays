@@ -21,6 +21,7 @@ Route::match(['get', 'post'], '/dashboard', function(){
 Route::match(['get', 'post'], '/home', function(){
     return view('dashboard');
 });
+Route::view('/loginpage', 'auth.login');
 Route::view('/pages/slick', 'pages.slick');
 Route::view('/pages/datatables', 'pages.datatables');
 Route::view('/pages/blank', 'pages.blank');
