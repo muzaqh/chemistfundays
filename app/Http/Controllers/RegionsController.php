@@ -35,9 +35,9 @@ class RegionsController extends Controller
             $test = dataRegion::updateOrCreate([
                 'name' => $request['name'],
             ]);
-            return redirect('/regions')->with('success', 'Your data has been deleted. '); 
+            return redirect('/regions')->with('success', 'Your data has been Stored. '); 
         } catch (\Throwable $th) {
-            return redirect('/regions')->with('error', ); 
+            return redirect('/regions')->with('error', 'failed Store Data.'); 
         }
     }
 
@@ -54,4 +54,44 @@ class RegionsController extends Controller
         return view('admin.region.index', ['regions' => $regions, 'region' => $region]);
     }
 
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, $id)
+    {
+        validator::make($request->all(), [
+            'name' => ['required', 'string', 'max:255'],
+        ])->validate();
+        try {
+            $update = dataRegion::findOrFail($id);
+            $update->update([
+                'name' => $request['name'],
+            ]);
+            return redirect('/regions')->with('success', 'Your data has been Update. '); 
+        } catch (\Throwable $th) {
+            return redirect('/regions')->with('error', 'failed Update Data.'); 
+        }
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy($id)
+    {
+        try {
+            $user = dataRegion::findOrFail($id);
+            $user->delete();
+            return redirect()->back()->with('success', 'Your data has been deleted. '); 
+        } catch (\Throwable $th) {
+            return redirect()->back()->with('error', 'failed Delete Data. '); 
+        }
+          
+    }
 }

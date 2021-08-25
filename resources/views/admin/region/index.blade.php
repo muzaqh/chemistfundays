@@ -53,8 +53,13 @@
             </div>
             <div class="block-content">
                 <div class="form-group">
-                    <form class="input-group" action="{{ route('regions.store')}}" method="POST">
+                    <form class="input-group" action="{{ isset($region) ? route('regions.update',$region->id) : route('regions.store')}}" method="POST">
                         @csrf
+                        @if (isset($region))
+                        @method('PUT')
+                        @else
+                        @method('POST')
+                        @endif
                         <input type="name" class="form-control form-control-alt {{ $errors->has('name') ? 'is-invalid' : '' }}" id="for-name" name="name" placeholder="{{__('Regional')}}" value="{{ isset($region->name) ? old('name', $region->name ) : old('name')}}">
                         <div class="input-group-append">
                             <button type="submit" class="btn btn-alt-primary">Submit</button>
