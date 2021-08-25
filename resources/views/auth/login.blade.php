@@ -40,9 +40,19 @@
                                     @csrf
                                     <div class="form-group">
                                         <input type="text" class="form-control form-control-alt {{ $errors->has('email') ? 'is-invalid' : '' }}" id="login-email" name="email" placeholder="Email">
+                                        @error('email')
+                                            <span class="invalid-feedback" role="alert">
+                                                {{ $message }}
+                                            </span>
+                                        @enderror
                                     </div>
                                     <div class="form-group">
                                         <input type="password" class="form-control form-control-alt" id="login-password" name="password" placeholder="Password">
+                                        @error('password')
+                                            <span class="invalid-feedback" role="alert">
+                                                {{ $message }}
+                                            </span>
+                                        @enderror
                                     </div>
                                     <div class="form-group d-sm-flex justify-content-sm-between align-items-sm-center text-center text-sm-left">
                                         <div class="custom-control custom-checkbox custom-control-primary">
