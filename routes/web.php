@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\RegionsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,6 +27,8 @@ Route::view('/loginpage', 'auth.login');
 Route::view('/pages/slick', 'pages.slick');
 Route::view('/pages/datatables', 'pages.datatables');
 Route::view('/pages/blank', 'pages.blank');
+Route::resource('/users', UserController::class);
+Route::resource('/regions', RegionsController::class);
 
 Route::middleware(['auth'])->group(function () {
     Route::group(['middleware' => 'role:student', 'prefix' => 'student', 'as' => 'student.'], function() {

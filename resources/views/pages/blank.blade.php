@@ -26,6 +26,7 @@
             </div>
             <div class="block-content">
                 <p>Your content..</p>
+                <button type="button" class="btn btn-block btn-primary js-tooltip-enabled" data-toggle="tooltip" data-placement="top" title="" data-original-title="Top Tooltip">Top</button>
             </div>
         </div>
         <!-- END Your Block -->
