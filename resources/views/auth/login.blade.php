@@ -9,7 +9,7 @@
 
 @section('css_after')
     {{-- theme Dashmix --}}
-    <link rel="stylesheet" id="css-theme" href="{{ mix('css/themes/xeco.css') }}">
+    <link rel="stylesheet" id="css-theme" href="{{ mix('css/themes/xplay.css') }}">
 @endsection
 
 @section('content')

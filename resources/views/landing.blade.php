@@ -158,7 +158,7 @@
                                     </a>
                                 </span>
                                 <span class="ml-2 mr-2 mb-2 ml-lg-0 d-inline-flex">
-                                    <a class="btn btn-alt-primary px-3 py-2" href="javascript:void(0)">
+                                    <a class="btn btn-alt-primary px-3 py-2" href="/loginpage">
                                         Masuk
                                     </a>
                                 </span>
