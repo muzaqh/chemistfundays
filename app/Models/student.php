@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class student extends Model
+class Student extends Model
 {
     use HasFactory;
 
@@ -33,6 +33,9 @@ class student extends Model
      * @var array
      */
     protected $hidden = [
-
+        'user_id',
+        'region_id',
     ];
+
+    
 }
