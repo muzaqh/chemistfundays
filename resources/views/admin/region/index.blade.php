@@ -120,20 +120,6 @@
                                 
                             </tr>
                         @endforeach
-                        {{-- @for ($i = 1; $i < 21; $i++)
-                        <tr>
-                            <td class="text-center"></td>
-                            <td class="font-w600">
-                                <a href="javascript:void(0)">John Doe</a>
-                            </td>
-                            <td class="d-none d-sm-table-cell">
-                                client{{ $i }}<em class="text-muted">@example.com</em>
-                            </td>
-                            <td>
-                                <em class="text-muted">{{ rand(2, 10) }} days ago</em>
-                            </td>
-                        </tr>
-                        @endfor --}}
                     </tbody>
                 </table>
             </div>
