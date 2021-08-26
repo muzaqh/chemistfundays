@@ -139,7 +139,12 @@
                                 <a class="nav-main-link{{ request()->is('dashboard') ? ' active' : '' }}" href="/dashboard">
                                     <i class="nav-main-link-icon fa fa-location-arrow"></i>
                                     <span class="nav-main-link-name">Beranda</span>
-                                    <span class="nav-main-link-badge badge badge-pill badge-success">5</span>
+                                </a>
+                            </li>
+                            <li class="nav-main-item">
+                                <a class="nav-main-link" href="">
+                                    <i class="nav-main-link-icon fa "></i>
+                                    <span class="nav-main-link-name">Berkas</span>
                                 </a>
                             </li>
                             <li class="nav-main-heading">Anda ingin keluar akun?</li>

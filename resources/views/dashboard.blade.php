@@ -27,10 +27,10 @@
                     </div>
                     <div class="block-content">
                         <p>
-                            diisi dengan data berkas yang telah di upload oleh peserta
+                            status berkas yang telah kamu upload
                         </p>
                         <p>
-                            <strong>Status berkas</strong>
+                            <strong>Terferivikasi</strong>
                         </p>
                     </div>
                 </div>
@@ -38,49 +38,35 @@
             <div class="col-md-6 col-xl-3">
                 <div class="block block-rounded">
                     <div class="block-header block-header-default">
-                        <h3 class="block-title row justify-content-center">Status Berkas</h3>
+                        <h3 class="block-title row justify-content-center">Jadwal Pelaksanan Ujian</h3>
                     </div>
                     <div class="block-content">
                         <p>
-                            diisi dengan data berkas yang telah di upload oleh peserta
+                            Ujian akan dilaksanakan pada ....
                         </p>
-                        <p>
-                            <strong>Status berkas</strong>
-                        </p>
+                        <span class="flex row justify-content-center">
+                            <a class="btn btn-primary px-3 py-2" href="javascript:void(0)">
+                                Mulai ujian
+                            </a>
+                        </span>
                     </div>
                 </div>
             </div>
             <div class="col-md-6 col-xl-3">
                 <div class="block block-rounded">
                     <div class="block-header block-header-default">
-                        <h3 class="block-title row justify-content-center">Status Berkas</h3>
+                        <h3 class="block-title row justify-content-center">Progres</h3>
                     </div>
                     <div class="block-content">
                         <p>
-                            diisi dengan data berkas yang telah di upload oleh peserta
+                            diisi dengan progres dia selama berada diperlombaan
                         </p>
                         <p>
-                            <strong>Status berkas</strong>
+                            <strong>progres peserta (mendaftar -> terferivikasi -> ujian -> ucapan selamat)</strong>
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-xl-3">
-                <div class="block block-rounded">
-                    <div class="block-header block-header-default">
-                        <h3 class="block-title row justify-content-center">Status Berkas</h3>
-                    </div>
-                    <div class="block-content">
-                        <p>
-                            diisi dengan data berkas yang telah di upload oleh peserta
-                        </p>
-                        <p>
-                            <strong>Status berkas</strong>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            
         </div>
         
     </div>
