@@ -56,7 +56,7 @@
                                     </div>
                                     <div class="form-group d-sm-flex justify-content-sm-between align-items-sm-center text-center text-sm-left">
                                         <div class="custom-control custom-checkbox custom-control-primary">
-                                            <input type="checkbox" class="custom-control-input" id="login-remember-me" name="remember-me" checked="">
+                                            <input type="checkbox" class="custom-control-input" id="login-remember-me" name="remember" checked="">
                                             <label class="custom-control-label" for="login-remember-me">Ingat saya</label>
                                         </div>
                                         <div class="font-w600 font-size-sm py-1">

@@ -14,7 +14,7 @@ class CreateStudentsTable extends Migration
     public function up()
     {
         Schema::create('students', function (Blueprint $table) {
-            $table->foreignId('user_id')->constrained()->cascadeOnUpdate()->cascadeOnDelete();
+            $table->foreignId('user_id')->index()->constrained()->cascadeOnUpdate()->cascadeOnDelete();
             $table->foreignId('region_id')->constrained()->cascadeOnUpdate();
             $table->enum('contest', [1,2,3,4,5]);
             $table->date('date_of_birth');

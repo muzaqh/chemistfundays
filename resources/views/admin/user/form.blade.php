@@ -47,7 +47,7 @@
                     </div>
                     <div class="form-group">
                         <label for="example-ltf-password2">Password</label>
-                        <input type="password" class="form-control form-control-alt" id="example-ltf-password2" name="example-ltf-password2" placeholder="same as email" disabled>
+                        <input type="password" class="form-control form-control-alt" id="example-ltf-password2" name="example-ltf-password2" placeholder="Password same as email" disabled>
                     </div>
                     <div class="form-group">
                         <button type="submit" class="btn btn-hero-primary">submit</button>

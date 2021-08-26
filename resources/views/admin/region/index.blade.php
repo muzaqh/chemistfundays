@@ -53,8 +53,13 @@
             </div>
             <div class="block-content">
                 <div class="form-group">
-                    <form class="input-group" action="{{ route('regions.store')}}" method="POST">
+                    <form class="input-group" action="{{ isset($region) ? route('regions.update',$region->id) : route('regions.store')}}" method="POST">
                         @csrf
+                        @if (isset($region))
+                        @method('PUT')
+                        @else
+                        @method('POST')
+                        @endif
                         <input type="name" class="form-control form-control-alt {{ $errors->has('name') ? 'is-invalid' : '' }}" id="for-name" name="name" placeholder="{{__('Regional')}}" value="{{ isset($region->name) ? old('name', $region->name ) : old('name')}}">
                         <div class="input-group-append">
                             <button type="submit" class="btn btn-alt-primary">Submit</button>
@@ -115,20 +120,6 @@
                                 
                             </tr>
                         @endforeach
-                        {{-- @for ($i = 1; $i < 21; $i++)
-                        <tr>
-                            <td class="text-center"></td>
-                            <td class="font-w600">
-                                <a href="javascript:void(0)">John Doe</a>
-                            </td>
-                            <td class="d-none d-sm-table-cell">
-                                client{{ $i }}<em class="text-muted">@example.com</em>
-                            </td>
-                            <td>
-                                <em class="text-muted">{{ rand(2, 10) }} days ago</em>
-                            </td>
-                        </tr>
-                        @endfor --}}
                     </tbody>
                 </table>
             </div>

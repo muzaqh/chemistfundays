@@ -94,19 +94,13 @@
                                     <em class="text-muted">{{ $user->updated_at->diffForHumans()}}</em>
                                 </td>
                                 <td>
-                                    <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-primary js-tooltip-enabled" data-toggle="tooltip" title="" data-original-title="Edit">
-                                            <i class="fa fa-pencil-alt"></i>
-                                            </button>
-                                            <button type="button" id="{{$user->id}}" class="js-swal-confirm btn btn-sm btn-primary js-tooltip-enabled" data-toggle="tooltip" title="" data-original-title="Delete">
+                                        <button type="button" id="{{$user->id}}" class="js-swal-confirm btn btn-sm btn-primary js-tooltip-enabled" data-toggle="tooltip" title="" data-original-title="Delete">
                                                 <i class="fa fa-times"></i>
-                                            </button>
+                                        </button>
                                         <form action="{{ route('users.destroy',$user->id)}}" method="POST" id="delete_{{$user->id}}" style="display: inline-block">
                                             @method('DELETE')
                                             @csrf
-                                            
                                         </form>
-                                    </div>
                                 </td>
                                 
                             </tr>

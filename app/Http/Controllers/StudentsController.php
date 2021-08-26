@@ -4,10 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
-use App\Models\Region as DataRegion;
-use Carbon\Carbon;
+use App\Models\Student as DataStudent;
+use Carbon\Carbon;;
 
-class RegionsController extends Controller
+class StudentsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,8 +16,18 @@ class RegionsController extends Controller
      */
     public function index()
     {
-        $regions = dataRegion::all();
-        return view('admin.region.index', ['regions' => $regions]);
+        $student = DataStudent::where('user_id', Auth::user()->id);
+        return dd($student);
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
+    {
+        //
     }
 
     /**
@@ -42,6 +52,17 @@ class RegionsController extends Controller
     }
 
     /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function show($id)
+    {
+        //
+    }
+
+    /**
      * Show the form for editing the specified resource.
      *
      * @param  int  $id
@@ -49,9 +70,7 @@ class RegionsController extends Controller
      */
     public function edit($id)
     {
-        $region = dataRegion::find($id);
-        $regions = dataRegion::all();
-        return view('admin.region.index', ['regions' => $regions, 'region' => $region]);
+        //
     }
 
     /**
@@ -63,18 +82,7 @@ class RegionsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        validator::make($request->all(), [
-            'name' => ['required', 'string', 'max:255'],
-        ])->validate();
-        try {
-            $update = dataRegion::findOrFail($id);
-            $update->update([
-                'name' => $request['name'],
-            ]);
-            return redirect('/regions')->with('success', 'Your data has been Update. '); 
-        } catch (\Throwable $th) {
-            return redirect('/regions')->with('error', 'failed Update Data.'); 
-        }
+        //
     }
 
     /**
@@ -85,13 +93,6 @@ class RegionsController extends Controller
      */
     public function destroy($id)
     {
-        try {
-            $user = dataRegion::findOrFail($id);
-            $user->delete();
-            return redirect()->back()->with('success', 'Your data has been deleted. '); 
-        } catch (\Throwable $th) {
-            return redirect()->back()->with('error', 'failed Delete Data. '); 
-        }
-          
+        //
     }
 }
