@@ -65,7 +65,7 @@
                                     </div>
                                     <div class="form-group">
                                         <button type="submit" class="btn btn-block btn-hero-primary">
-                                            <a href="/dashboard">
+                                            <a href="/home">
                                             </a>
                                             <i class="fa fa-fw fa-sign-in-alt mr-1"></i> Masuk
                                         </button>

@@ -44,27 +44,21 @@
         <div class="content-side">
             <ul class="nav-main">
                 <li class="nav-main-item">
-                    <a class="nav-main-link active" href="gs_landing.html">
+                    <a class="nav-main-link active" href="/">
                         <i class="nav-main-link-icon fa fa-home"></i>
-                        <span class="nav-main-link-name">Home</span>
+                        <span class="nav-main-link-name">Informasi</span>
                     </a>
                 </li>
                 <li class="nav-main-item">
                     <a class="nav-main-link" href="javascript:void(0)">
                         <i class="nav-main-link-icon fa fa-rocket"></i>
-                        <span class="nav-main-link-name">Features</span>
+                        <span class="nav-main-link-name">Daftar</span>
                     </a>
                 </li>
                 <li class="nav-main-item">
-                    <a class="nav-main-link" href="javascript:void(0)">
+                    <a class="nav-main-link" href="/loginpage">
                         <i class="nav-main-link-icon fab fa-paypal"></i>
-                        <span class="nav-main-link-name">Pricing</span>
-                    </a>
-                </li>
-                <li class="nav-main-item">
-                    <a class="nav-main-link" href="javascript:void(0)">
-                        <i class="nav-main-link-icon fa fa-envelope"></i>
-                        <span class="nav-main-link-name">Contact</span>
+                        <span class="nav-main-link-name">Masuk</span>
                     </a>
                 </li>
             </ul>
