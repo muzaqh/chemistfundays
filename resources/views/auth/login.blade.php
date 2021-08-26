@@ -13,6 +13,8 @@
 @endsection
 
 @section('content')
+
+<a href="/dashboardadmin">buka dashboard admin</a>
 <div id="page-container" class="side-trans-enabled">
 
     <!-- Main Container -->
